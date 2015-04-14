@@ -1,0 +1,21 @@
+body {
+  margin: 0px; }
+
+#header h1 {
+  margin: 0px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+#header .banner-image,
+#header .title-container {
+  display: inline-block; }
+
+#footer {
+  height: 100px;
+  background-color: grey; }
+  #footer .footer-links {
+    float: right; }
+    #footer .footer-links li {
+      display: inline-block; }
