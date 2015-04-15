@@ -1,0 +1,42 @@
+@import 'mixins';
+
+body {
+	margin:0px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+#header {
+	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.75) 0,rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.75) 0,rgba(0,0,0,0) 100%);
+	height: 75px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	&.fly{
+		position: fixed;
+		z-index: 1;
+		-webkit-animation: slideInDown 1s;
+		animation: slideInDown 1s;
+	}
+	h1 {
+		margin:0px;
+		@include center-vertical;
+	}
+}
+
+#footer {
+	height:100px;
+	background-color:grey;
+	.footer-links{
+		float:right;
+		li{
+			display:inline-block;
+		}
+	}
+}
+
+@media screen and (min-width: 650px) {
+	#header {
+		height: 80px;
+	}
+}
