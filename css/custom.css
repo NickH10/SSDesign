@@ -1,0 +1,47 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+	height: 100vh;
+}
+
+header, section, footer {
+	height: 100%;
+	width: 100%;
+	min-height: 550px;
+	min-width: 650px;
+}
+
+header {
+	background-image: url("/img/animals-farm-horses-4111.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+header a {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+
+}
+
+header a h1 {
+	font-size: 42px;
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@media screen and (min-width: 650px) and (min-height: 550px) {
+	header, section, footer {
+		height: 100%;
+		width: 100%;
+		min-height: 550px;
+		min-width: 650px;
+	}
+}
