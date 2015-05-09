@@ -37,16 +37,23 @@ header a h1 {
 	display: inline-block;
 }
 
+#footer {
+	position: relative;
+}
+
 #footer .nav {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
 }
 
+#footer .wrap {
+	margin: 20px auto;
+	width: 80%;
+}
+
 @media screen and (min-width: 650px) and (min-height: 550px) {
 	header, section, footer {
-		height: 100%;
-		width: 100%;
 		min-height: 550px;
 		min-width: 650px;
 	}
