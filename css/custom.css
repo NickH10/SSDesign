@@ -10,6 +10,7 @@ body {
 }
 
 a {
+    color: #fff;
 	text-decoration: none;
 }
 
@@ -28,15 +29,66 @@ header {
 	text-align: center;
 }
 
-header a {
+#bar .home {
+    margin: 20px 0;
+	font-size: 34px;
+	font-weight: 600;
+	color: white;
 	display: inline-block;
 }
+#bar {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0, rgba(0, 0, 0, 0) 100%);
+    height: 76px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%
+}
 
-header a h1 {
-	font-size: 42px;
-	font-weight: 600;
-	color: black;
-	display: inline-block;
+.wrap {
+    margin: 0 auto;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 80%;
+    height: 100%;
+}
+
+#bar .float {
+    position: fixed;
+    z-index: 1;
+    -webkit-animation: slideInDown 1s;
+    animation: slideInDown 1s;
+}
+
+#bar .wrap div {
+    display: inline-block;
+}
+
+#bar .logos {
+    float: left;
+}
+
+#bar .links {
+    float: right;
+}
+
+#bar .contact {
+    margin: 20px auto;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding: 5px 20px;
+    border: 3px solid #fff;
+    font-size: 16px;
+}
+
+#bar .contact:hover {
+    border-color: #8967b6;
+}
+
+#bar .contact:active {
+    background-color: #8967b6;
 }
 
 #footer {
@@ -67,25 +119,44 @@ header a h1 {
 #footer .links li{
 	margin: 0px 0px 0px 20px;
 	float: left;
-	font-weight: 500;
 }
 
-#footer .links li a {
+.links a {
 	border-radius: 100px;
 	display: block;
 	padding: 5px 15px;
-    color: black;
+    color: #fff;
     font-weight: 600;
 }
 
-#footer .links li:hover {
+.links a:active {
+    background-color: #8967b6;
+    color: white;
+}
+
+#footer .links a:hover {
 	background-color: #bbb;
 	border-radius: 100px;
 }
 
-#footer .links li a:active {
-    background-color: #8967b6;
-    color: white;
+@-webkit-keyframes slideInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100px)
+    }
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    100% {
+        transform: translateY(0)
+    }
 }
 
 @media screen and (min-width: 650px) and (min-height: 550px) {
